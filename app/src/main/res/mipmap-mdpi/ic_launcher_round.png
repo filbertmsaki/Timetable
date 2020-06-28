@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="java.nio.file.FileSystem java.nio.file.Path getPath(java.lang.String, java.lang.String...)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files A readAttributes(java.nio.file.Path, java.lang.Class&lt;A&gt;, java.nio.file.LinkOption...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files A readAttributes(java.nio.file.Path, java.lang.Class&lt;A&gt;, java.nio.file.LinkOption...) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files V getFileAttributeView(java.nio.file.Path, java.lang.Class&lt;V&gt;, java.nio.file.LinkOption...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files V getFileAttributeView(java.nio.file.Path, java.lang.Class&lt;V&gt;, java.nio.file.LinkOption...) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean deleteIfExists(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean exists(java.nio.file.Path, java.nio.file.LinkOption...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isDirectory(java.nio.file.Path, java.nio.file.LinkOption...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isExecutable(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isHidden(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isReadable(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isRegularFile(java.nio.file.Path, java.nio.file.LinkOption...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isSameFile(java.nio.file.Path, java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isSameFile(java.nio.file.Path, java.nio.file.Path) 1">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isSymbolicLink(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean isWritable(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files boolean notExists(java.nio.file.Path, java.nio.file.LinkOption...) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files byte[] readAllBytes(java.nio.file.Path)">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files byte[] readAllBytes(java.nio.file.Path) 0">
+    <annotation name="android.support.annotation.NonNull" />
+  </item>
+  <item name="java.nio.file.Files java.io.BufferedReader newBufferedReader(java.nio.file.Path, java.nio.charset.C

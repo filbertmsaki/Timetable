@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboard_menu"
+        android:icon="@drawable/dashboard"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/day_menu"
+        android:icon="@drawable/day"
+        android:title="Day"
+        />
+    <item
+        android:id="@+id/week_menu"
+        android:icon="@drawable/week"
+        android:title="Week" />
+    <item
+        android:id="@+id/tasks_menu"
+        android:icon="@drawable/tasks"
+        android:title="Tasks" />
+    <item
+        android:id="@+id/exams_menu"
+        android:icon="@drawable/exams"
+        android:title="Exams" />
+    <item
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/info_menu"
+        android:icon="@drawable/info"
+        android:title="Info" />
+</menu>
