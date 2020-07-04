@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.home_layout);
         mToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
+        mToolbar.setTitle("Dashboard");
 
         //Navigation Drawer
         mDrawerLayout = findViewById(R.id.drawer);
@@ -43,6 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mToggle.syncState();
 
         //Loading Default Fragment
+
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction =mFragmentManager.beginTransaction();
         mFragmentTransaction.add(R.id.container_fragment,new Dashboard());
@@ -56,46 +59,46 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         mDrawerLayout.closeDrawer(GravityCompat.START);
         if(menuItem.getItemId() ==R.id.dashboard_menu){
+            mToolbar.setTitle("Dashboard");
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction =mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.container_fragment,new Dashboard());
             mFragmentTransaction.commit();
         }
         if(menuItem.getItemId() == R.id.day_menu){
+            mToolbar.setTitle("Day View");
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction =mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.container_fragment,new Day());
             mFragmentTransaction.commit();
         }
         if(menuItem.getItemId() == R.id.week_menu){
+            mToolbar.setTitle("Week View");
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction =mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.container_fragment,new Week());
             mFragmentTransaction.commit();
         }
         if(menuItem.getItemId() == R.id.tasks_menu){
+            mToolbar.setTitle("Tasks");
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction =mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.container_fragment,new Tasks());
             mFragmentTransaction.commit();
         }
         if(menuItem.getItemId() == R.id.exams_menu){
+            mToolbar.setTitle("Exams");
             mFragmentManager = getSupportFragmentManager();
             mFragmentTransaction =mFragmentManager.beginTransaction();
             mFragmentTransaction.replace(R.id.container_fragment,new Exams());
             mFragmentTransaction.commit();
         }
         if(menuItem.getItemId() == R.id.settings_menu){
-            mFragmentManager = getSupportFragmentManager();
-            mFragmentTransaction =mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.container_fragment,new Settings());
-            mFragmentTransaction.commit();
+            Intent intent = new Intent(MainActivity.this,SettingsActivity.class);
+            startActivity(intent);
         }
         if(menuItem.getItemId() == R.id.info_menu){
-            mFragmentManager = getSupportFragmentManager();
-            mFragmentTransaction =mFragmentManager.beginTransaction();
-            mFragmentTransaction.replace(R.id.container_fragment,new Info());
-            mFragmentTransaction.commit();
+
         }
         return true;
     }
